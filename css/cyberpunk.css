@@ -10804,6 +10804,11 @@ article.media .media-content .title {
   margin: 0;
   line-height: inherit;
 }
+article.article .title-and-metadata {
+  background: #f5f5f5;
+  border: 0.3rem dotted #f5f5f5;
+  border-radius: 0.3rem;
+}
 article.article .article-meta,
 article.article .article-tags {
   color: #848484;
@@ -11668,6 +11673,19 @@ figure.highlight.foldable div.level-left {
   .column-right-shadow.is-sticky {
     top: 0.75rem;
     align-self: flex-start;
+  }
+  .is-sticky-bottom {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 1.5rem;
+    z-index: 99;
+  }
+  .column-main.is-sticky-bottom,
+  .column-left.is-sticky-bottom,
+  .column-right.is-sticky-bottom,
+  .column-right-shadow.is-sticky-bottom {
+    bottom: 0.75rem;
+    align-self: flex-end;
   }
 }
 @media screen and (max-width: 768px) {
